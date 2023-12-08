@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-
+import ContactForm from './components/contact'
 import About from './components/About';
 import Hero from './components/Hero';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -13,10 +13,11 @@ function App() {
       <div>
       <Navbar />
         <Routes>
-          <Route path="/" exact element={<Hero/>} />
+          <Route path="/ReactPortfolio" exact element={<Hero/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/project" element={<Project/>} />
-          <Route path="/skills" element={<Skills/>} />        
+          <Route path="/skills" element={<Skills/>} />
+          <Route path="/contact" element={<ContactForm/>} />        
         </Routes>    
       </div>      
     </Router>    
