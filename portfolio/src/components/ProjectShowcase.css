@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slideshow {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .slide {   
+    justify-content: center;
+    border-radius: 50px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .description {
+    
+    margin-top: 20px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .prev,
+    .next {
+      font-size: 20px;
+    }
+}
